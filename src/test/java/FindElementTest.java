@@ -54,6 +54,9 @@ public class FindElementTest {
         System.out.println(telephone.getText());
 
         WebElement description = driver.findElement(By.className("description"));
-        System.out.println(description.getText());}
+        System.out.println(description.getText());
+    }
+
+
 
 }
