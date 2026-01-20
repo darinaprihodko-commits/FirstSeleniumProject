@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="daab0d34-970e-4f82-bbd6-a69b6c1deafc" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="38TSMx9E35HM5zsMDrxnUX8OICV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.FirstSeleniumProject.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.FindElementTest.executor": "Run",
+    "TestNG.FindElementTest.findElementById.executor": "Run",
+    "TestNG.FindElementTest.findElementByTagName.executor": "Run",
+    "TestNG.FindElementTest.findElementClassName.executor": "Run",
+    "TestNG.FindElementTest.findElentById.executor": "Run",
+    "TestNG.FirstSeleniumTest.executor": "Run",
+    "TestNG.FirstSeleniumTest.firstTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.FindElementTest.findElementClassName">
+    <configuration name="FindElementTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstSeleniumProject.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindElementTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindElementTest.findElementById" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstSeleniumProject.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindElementTest" />
+      <option name="METHOD_NAME" value="findElementById" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindElementTest.findElementByTagName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstSeleniumProject.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindElementTest" />
+      <option name="METHOD_NAME" value="findElementByTagName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindElementTest.findElementClassName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstSeleniumProject.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindElementTest" />
+      <option name="METHOD_NAME" value="findElementClassName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindElementTest.findElentById" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstSeleniumProject.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindElementTest" />
+      <option name="METHOD_NAME" value="findElentById" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.FindElementTest.findElementClassName" />
+        <item itemvalue="TestNG.FindElementTest.findElementById" />
+        <item itemvalue="TestNG.FindElementTest.findElentById" />
+        <item itemvalue="TestNG.FindElementTest.findElementByTagName" />
+        <item itemvalue="TestNG.FindElementTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daab0d34-970e-4f82-bbd6-a69b6c1deafc" name="Changes" comment="" />
+      <created>1768822027105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768822027105</updated>
+    </task>
+    <servers />
+  </component>
+</project>
