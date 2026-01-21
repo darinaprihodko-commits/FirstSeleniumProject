@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daab0d34-970e-4f82-bbd6-a69b6c1deafc" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FindElementDemoWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindElementDemoWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindElementDemoWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FindElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindElementTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.FirstSeleniumProject.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -134,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.FindElementDemoWeb.findElementByClassName" />
-        <item itemvalue="TestNG.FindElementTest.findElementClassName" />
-        <item itemvalue="TestNG.FindElementTest.findElementById" />
         <item itemvalue="TestNG.FindElementDemoWeb.findElementById" />
+        <item itemvalue="TestNG.FindElementTest.findElementById" />
         <item itemvalue="TestNG.FindElementDemoWeb.findElementByName" />
+        <item itemvalue="TestNG.FindElementTest.findElementClassName" />
       </list>
     </recent_temporary>
   </component>
@@ -149,10 +150,41 @@
       <option name="presentableId" value="Default" />
       <updated>1768822027105</updated>
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <option name="closed" value="true" />
+      <created>1768944860595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768944860595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
     <option name="LAST_COMMIT_MESSAGE" value="add" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/FindElementTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

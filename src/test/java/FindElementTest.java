@@ -44,7 +44,7 @@ public class FindElementTest {
         System.out.println(city.getAttribute("id"));
 
         WebElement dates = driver.findElement(By.id("dates"));
-        System.out.println(city.getAttribute("id"));
+        System.out.println(dates.getAttribute("id"));
 
     }
 
