@@ -57,6 +57,22 @@ public class FindElementTest {
         System.out.println(description.getText());
     }
 
+    @Test
+    public void findElementByLinkText() {
+        WebElement linkText = driver.findElement(By.linkText("Let the car work"));
+        System.out.println(linkText.getText());
+    }
 
+    @Test
+    public void findElementByPartialLinkText() {
+        WebElement partialink = driver.findElement(By.partialLinkText("work"));
+        System.out.println(partialink);
+    }
+
+    @Test
+    public void findElementByCssSelector() {
+        driver.findElement(By.cssSelector("h1"));
+
+    }
 
 }
