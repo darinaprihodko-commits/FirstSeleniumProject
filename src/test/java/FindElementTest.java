@@ -9,47 +9,57 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-
 public class FindElementTest {
+
     WebDriver driver;
 
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.get("https://ilcarro.web.app");
+        //maximize browser to windows
         driver.manage().window().maximize();
+        //wait to upload all elements
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @Test
     public void findElementByTagName() {
+        //fin an element
+        //tag name -> h1
         WebElement h1 = driver.findElement(By.tagName("h1"));
         System.out.println(h1.getText());
+
+        WebElement h2 = driver.findElement(By.tagName("h2"));
+        System.out.println(h2.getText());
 
         WebElement link = driver.findElement(By.tagName("a"));
         System.out.println(link.getAttribute("class"));
 
+        //list of elements
         List<WebElement> links = driver.findElements(By.tagName("a"));
         System.out.println(links.size());
     }
 
     @Test
     public void findElementById() {
+
         WebElement city = driver.findElement(By.id("city"));
         System.out.println(city.getAttribute("id"));
 
         WebElement dates = driver.findElement(By.id("dates"));
         System.out.println(dates.getAttribute("id"));
-
     }
 
     @Test
-    public void findElementClassName() {
+    public void findElementByClassName() {
         WebElement telephone = driver.findElement(By.className("telephone"));
         System.out.println(telephone.getText());
 
@@ -64,15 +74,49 @@ public class FindElementTest {
     }
 
     @Test
-    public void findElementByPartialLinkText() {
-        WebElement partialink = driver.findElement(By.partialLinkText("work"));
-        System.out.println(partialink);
+    public void findElementByPartialLinkText(){
+        WebElement partialLink = driver.findElement(By.partialLinkText("work"));
+        System.out.println(partialLink.getText());
     }
 
     @Test
     public void findElementByCssSelector() {
+        // driver.findElement(By.tagName("h1"));
+        //tag name "h1" -> css "h1"
         driver.findElement(By.cssSelector("h1"));
 
+        //driver.findElement(By.id("city"));
+        // id "city" -> css "#city"
+        driver.findElement(By.cssSelector("#city"));
+
+        // driver.findElement(By.className("telephone"));
+        // class "telephone" -> css ".telephone"
+        driver.findElement(By.cssSelector(".telephone"));
+
+        // [attr='par']
+        driver.findElement(By.cssSelector("[href='/search']"));
+        driver.findElement(By.cssSelector("[for='city']"));
+
+        //contains -> *
+        driver.findElement(By.cssSelector("[href*='car']"));
+        //start -> ^
+        driver.findElement(By.cssSelector("[href^='/let']"));
+        //end to -> $
+        driver.findElement(By.cssSelector("[href$='work']"));
+
+        //composite cssSelector
+        driver.findElement(By.cssSelector("a.navigation-link[href='/search']"));// tag+class+pare
+        driver.findElement(By.cssSelector("div.social-networks")); // tag+class
+
+        driver.findElement(By.cssSelector(".logo>img")); // > one step below
+        driver.findElement(By.cssSelector(".feedback .feedback-date")); // <space> one or more steps below
+
+        //<tag> or <id> or <class>:nth-child(n)
+        WebElement feedback = driver.findElement(By.cssSelector(".feedback:nth-child(5)"));
+        System.out.println(feedback.getText());
+
+        driver.findElement(By.cssSelector("[type='submit']"));
+        driver.findElement(By.cssSelector(".title-container span.title")); // class + <space> + tag + class
     }
 
 }
