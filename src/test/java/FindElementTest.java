@@ -183,4 +183,3 @@ public class FindElementTest {
 //  cssSelector -> div>a        xpath -> div/a  - one step
 //  cssSelector -> div a        xpath -> div//a - one or more steps
 
-}
