@@ -1,21 +1,30 @@
 package com.dws.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CreateAccountTests extends TestBase{
-    @Test
-    public void neeUserRegisterPositiveTest() {
-        click(By.cssSelector("[href='/register']"));
-        type(By.id("FirstName"),"Karl");
-        type(By.id("LastName"),"Adam");
-        type(By.id("Email"),newEmail());
-        type(By.id("Password"),"Karl1234");
-        type(By.id("ConfirmPassword"),"Karl1234");
-        click(By.id("register-button"));
-        Assert.assertTrue(isElementPresent(By.cssSelector(".header [href='/customer/info']")));
+public class ItemTests extends TestBase{
+
+    @BeforeMethod
+    public void precondition() {
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillLoginForm("karl@gm.com","Karl1234$");
+        app.getUser().clickOnLoginButton();
     }
+
+    @Test
+    public void addItemToCartTest() {
+        String name = app.getItem().itemName("3");
+        app.getItem().clickOnItemInList("3");
+        app.getItem().clickOnShoppingCartLink();
+        Assert.assertTrue(app.getItem().verifyByName(name));
+    }
+
+    @AfterMethod
+    public void postCondition() {
+        app.getItem().removeItemFromCart();
+    }
+
 }
-
-
